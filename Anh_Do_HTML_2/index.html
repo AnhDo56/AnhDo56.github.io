@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Laurea University - Job Application</title>
+        <style>
+            body { font-family: arial, sans-serif;margin: 20px;}
+            header, footer {background-color: #f0f0f0; padding: 10px; }
+            nav a { margin: 0 10px; }
+            section { margin-top: 20px; }
+            .form-section { background-color: #f9f9f9; padding: 15px; border: 1px solid #ccc; }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Laurea University of Applied Sciences</h1>
+            <nav>
+                <a href="#application">Application Form</a>
+                <a href="#quote">Quote</a>
+                <a href="#media">Laurea Media</a>
+            </nav>
+        </header>
+        <main>
+            <section id="application" class="form-section">
+                <article>
+                    <h2>Student Assistant Job Application</h2>
+                    <!-- Job Application Form starts here-->
+                     <form action="/submit" method="post" autocomplete="on">
+                        <label>Full Name:
+                            <input type="text" name="fullname" placeholder="Jane Student" required minlength="3" maxlength="50">
+                            </label><br><br>
+                        <label>Email:
+                            <input type="email" name="email" placeholder="jane@student.laurea.fi" required pattern="^[a-zA-Z0-9._%+-]+@student\.laurea\.fi$" title="Please enter your Laurea student email address.">
+                        </label><br><br>
+                        <label>Phone Number:
+                            <input type="tel" name="phone" placeholder="+358401234567" required pattern="^\+358[0-9]{7,12}$" title="Please enter a valid Finnish phone number starting with +358.">
+                            </Label><br><br>
+                        <label>Password:
+                            <input type="password" name="password" required minlength="8" maxlength="20" title="Password must be between 8 and 20 characters.">
+                        </label><br><br>
+                        <label>Years of Experience:
+                            <input type="number" name="experience" min="0" max="10">
+                        </label><br><br>
+                        <label>Expected Salary Range:
+                            <input type="range" name="salary" min="2000" max="4000" step="100">
+                        </label><br><br>
+                        <label>Job Preferences:</label><br>
+                        <input type="checkbox" name="preference" value="remote"> Remote Work<br>
+                        <input type="checkbox" name="preference" value="part-time"> Part-time<br>
+                        <input type="checkbox" name="preference" value="on-site"> On Campus<br>
+                        <br>
+                        <Label>Job Type:</Label><br>
+                        <input type="radio" name="jobtype" value="internship"> Internship<br>
+                        <input type="radio" name="jobtype" value="studentassistant"> Student Assistant<br><br>
+                        <label>Department:
+                            <select name="department" required>
+                                <option value="Business"> Business Management</option>
+                                <option value="IT">Information Technology</option>
+                                <option value="Marketing">Marketing</option>
+                                <option value="Nursing">Nursing</option>
+                                <option value="Social">Social Services</option>
+
+                            </select>
+                        </label><br><br>
+                        <label> Campus Preferences:
+                            <input list="campuses" name="campus">
+                            <datalist id="campuses">
+                                <option value="Espoo">
+                                <option value="Vantaa">
+                                <option value="Leppävaara">
+                                <option value="Tikkurila">
+                                <option value="Lohja">
+                            </datalist>
+                        </label><br><br>
+                        <label> Motivation Letter:<br>
+                            <textarea name="Cover Letter" rows="5" cols="40" placeholder="Why are you applying for this position?" required></textarea>
+                        </label><br><br>
+                        <label> Referral Code (disabled):
+                            <input type="text" name="LAUREAEF123" disabled>
+                        </label><br><br>
+                        <label> Application ID (read-only):
+                            <input type="text" name="appID" value="LAU2025APP" readonly>
+                        </label><br><br>
+                        <input type="submit" value="Send Application" aria-label="Submit Job Application">
+                            </form>
+                            <!-- Job Application Form ends here-->
+                </article>
+            </section>
+            <aside>
+                <blockquote id="quote">
+                    "The future belongs to those who believe in the beauty of their dreams." - Eleanor Roosevelt
+                </blockquote>
+            </aside>
+            <section id="media">
+                <article>
+                    <h2>Laurea Media</h2>
+                    <!-- Figure with Image and Caption -->
+                     <figure>
+                        <img src="https://www.laurea.fi/globalassets/logot/laurea/laurea-vaakalogo_rgb.png"
+                        alt="Laurea logo"
+                        Width="500">
+                        <figcaption>Official Laurea Logo</figcaption>
+                     </figure><br>
+                     <!--Embed External Media-->
+                     <embed src="https://www.laurea.fi/globalassets/laurea/documents/strategia-2030_eng-lowres.pdf" type="application/pdf" width="500" height="300">
+                     </embed><br><br>
+                     <br><!--Google Maps Embed-->
+                     <iframe
+                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.9306070835637!2d24.802025113222633!3d60.22267777495522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x468df67d9b306011%3A0x3d5f1903758ff53d!2sLaurea%20Lepp%C3%A4vaaran%20kampus!5e0!3m2!1sen!2sfi!4v1762776620579!5m2!1sen!2sfi" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <br><br>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2025 Laurea University of Applied Sciences. All rights reserved.</p>
+        </footer>
+        <!--This is a comment showing required use of HTML comments-->
+                     
+                
+        </main>
+    </body>
+</html>
