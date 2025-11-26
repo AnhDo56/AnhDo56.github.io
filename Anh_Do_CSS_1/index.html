@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Viewport meta tag for responsive design -->
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laurea University - Job Application</title>
+    <!-- Internal CSS applied -->
+    <style>
+        Body { font-family: Arial, sans-serif; margin: 20px; }
+        header, footer { background-color: #f0f0f0; padding: 10px;}
+        nav a { margin: 0 10px;}
+        section { margin-top: 20px; }
+        .form-section {background-color: lightgreen; padding: 15px; border: 1px solid #ccc;}
+        </style>
+    <!-- External CSS file linked -->
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+    <header>
+    <!-- ID selector (#main-title) and chaining (h1.title) in external CSS-->
+
+        <h1> Laurea University of Applied Sciences</h1>
+        <!--class selector ".menu" in external CSS-->
+        <nav class="menu">
+            <a href="#application">Application Form</a>
+            <a href="#quote">Quote</a>
+            
+        </nav>
+    </header>
+    <main>
+    <!--Class selector "".form-section" in external CSS-->
+    <section class="form-section">
+    <article>
+    <h2>Student Assistant Job Application</h2>
+    <!-- JOb Application Form starts here -->
+    <form action="/submit" method="post" autocomplete="on">
+    <!-- Descendant Combinators: Selector ".form-selection label" in external CSS -->
+    <label>Full Name:
+        <input type="text" name="fullname" placeholder="Jane Student" required minlength="3" maxlength="50">
+    </label><br><br>
+    <label>Email::
+        <input type="text" name="email" placeholder="you@student.laurea.fi" required pattern="[^@\s]+@[^@\s]+\.[^@\s]+">
+    </label><br><br>
+    <label>Password:
+        <input type="password" name="password" required>
+    </label><br><br>
+    <label>Years of Experience:
+        <input type="number" name="experience" min="0" max="10" required>
+    </label><br><br>
+
+<label>Expected salary range:
+    <input
+      type="range"
+      id="salary"
+      name="salary"
+      min="500"
+      max="5000"
+      step="100"
+      value="800"
+      oninput="document.getElementById('salaryValue').textContent = this.value"
+      onchange="document.getElementById('salaryValue').textContent = this.value"
+    >
+    <span id="salaryValue">800</span> EUR per month
+  </label><br><br>
+
+
+       <label>Job Preferences:</label><br>
+    <label><input type="checkbox" name="preference" value="part-time"> Part-time</label><br>
+    <label><input type="checkbox" name="preference" value="remote"> Remote</label><br>
+    <label><input type="checkbox" name="preference" value="oncampus"> On-campus</label><br><br>
+
+    <label>Job Type:</label><br>
+    <label><input type="radio" name="jobtype" value="internship" required> Internship</label><br>
+    <label><input type="radio" name="jobtype" value="student-assistant" required> Student Assistant</label><br>
+    
+    <label>Department:
+        <select name="department" required>
+            <option value="IT">Information technology</option>
+            <option value="Business">Business Management</option>
+            <option value="Nursing">Nursing</option>
+            <option value="social">Social Services</option>
+        </select>
+    </label><br><br>
+    <label>Campus Preference:
+        <input list="campuses" name="campus">
+        <datalist id="campuses">
+            <option value="Leppavaara">
+            <option value="Tikkurila">
+            <option value="Hyvinkaa">
+            <option value="Lohja">
+        </datalist>
+    </label><br><br>
+    <label>Motivation Letter:<br>
+        <textarea name="coverletter" rows="5" cols="40" placeholder="Why would you like to work with us?"></textarea>
+    </label><br><br>
+    
+    <label>Job position ID (disabled)
+    <input type="text" value="LAUREAREF123" disabled>
+    </label><br><br>    
+
+    <label>Application ID (readonly):
+    <input type="text" value="LAU2025APP" readonly>
+    </label><br><br>
+
+    <!--Action (submit) button or input -->
+    <input type="Submit" value="Send Application" aria-Label="Submit your job application to Laurea University">
+    </form>
+    <!--Job application form ends here -->
+    </article>      
+    </section>
+
+    <aside>
+    <blockquote id="quote"> <!-- ID attribute to blockquote element -->
+    "The future belongs to those who believe in the beauty of their dreams." - Eleanor Roosevelt
+    </blockquote>   
+    </aside>
+
+    <section>
+    <h2 class="green bold">Checklist</h2> <!-- Multiple class selectors ".green.bold" in external CSS -->
+    <ul class="main-list"> <!-- Class selector ".main-list" in external CSS -->
+        <li>Bring Updated CV</li>
+        <li>Prepare references</li>
+        <li>Check Laurea career portal</li>
+        <li>Prepare for the interview</li>
+    </ul>
+    </section>
+    <section>
+    <!-- inliine CSS applied to paragraph element, also class ".visit-Laurea" is used from external CSS -->
+    <p style="text-align: center; margin: 20px 0 20px 0;">Visit <a href="http://www.laurea.fi/en/Laurea/as-an-employer/" class="visit-Laurea">Laurea University Career Page</a> for more information.</p>
+    <!-- Class".Laurea" used in external CSS -->
+    <a href="http://www.laurea.fi/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2weLWMLaBDgz-TotpVyoZb1mzqYKv2cHgoQ&s" alt="Laurea University Logo" class="Laurea"></a>
+    </section>
+    <!-- This logo is added here to demonstrate CSS declaration "visibility hidden", remove CSS rule set in external CSS to view the logo above the <footer> element -->
+    <section class="hidden-logo">
+        
+    <img src="laurea_logo.png" alt="Laurea University Logo" style="width:200px; height:200px;">
+    </section>
+    </main>
+
+    <!--Class ".menu" used in external CSS -->
+    <footer class="menu">
+        <p>&copy; 2025 Laurea University of Applied Sciences. All rights reserved.</p>
+    </footer>
+    <!-- This is the comment showing required use of HTML comments -->
+    </body>
+</html>
+
+
+    
