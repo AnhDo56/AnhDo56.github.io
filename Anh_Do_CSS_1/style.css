@@ -1,0 +1,191 @@
+/* ========== 1. RESET DEFAULTS ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ========== 2. SELECTORS ========== */
+
+/* — 2.1 Type Selectors — */
+
+/* Heading */
+h1 {
+  margin-top: 20px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  font-size: 2em;
+  color: #004080;
+}
+
+/* Aside */
+aside {
+  text-align: center;
+  margin: 20px auto;
+  color: red;
+}
+
+/* Heading */
+h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* Form */
+form {
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 600px;
+  border-radius: 8px;
+}
+
+/* Paragraph */
+p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Navigation Bar */
+nav {
+  text-align: center;   /* Centers nav links */
+  margin: 15px 0;
+}
+
+/* Footer */
+footer {
+  text-align: center;   /* Centers footer text */
+  margin-top: 20px;
+}
+
+/* ========== 2.2 Class Selectors ========== */
+
+/* Targets the <section> element with class="form-section" */
+.form-section {
+  background-color: #ffffff;
+  margin: 20px auto;
+  padding: 15px;
+  border-radius: px;
+  width: 80%;
+}
+
+
+/* ========== 2.3 ID Selectors ========== */
+
+/* Targets the main title (h1) */
+#main-title {
+  color: #004080;
+  margin-bottom: 20px;
+}
+
+/* ========== 2.4 Multiple Class Selectors ========== */
+
+/* .green.bold targets "Checklist" (h2) */
+.green.bold {
+  color: green;
+  font-weight: bold;
+}
+
+/* ========== 2.5 Attribute Selectors ========== */
+
+/* Targets text inputs */
+input[type="text"] {
+  border: 1px solid #ccc;
+  margin: 1px 5px 1px 5px;      /* margin shorthand */
+  padding: 5px 10px 5px 10px;  /* padding shorthand */
+}
+
+/* Targets password input */
+input[type="password"] {
+  border: 1px solid #ccc;
+  margin: 1px 5px 1px 5px;      /* margin shorthand */
+  padding: 5px 10px 5px 10px;  /* padding shorthand */
+}
+
+/* Targets Laurea logo */
+img[src="Laurea-logo"] {
+  border: 1px solid #004080;
+  border-radius: 20px;
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* ========== 2.6 Descendant Combinators ========== */
+
+/* Targets labels (label is descendant of form element) */
+.form-section label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* Targets the list box (descendant of <section> element) found below the <h2> element "Checklist" */
+section .main-list {
+  list-style-type: square;
+  background-color: #f0f8ff;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 15px;
+  margin: 20px auto;
+  max-width: 400px;
+}
+
+/* Targets the list items (descendant of <section> element) below the <h2> "Checklist" */
+.main-list li {
+  margin-left: 20px;
+  color: #810505;
+  padding: 5px 0;
+}
+
+/* ========== 2.7 Multiple selectors ========== */
+
+/* Contains two type selectors and one class selector */
+/* Class ".menu" targets the navbar or <nav> element */
+h1, h2, .menu {
+  color: #aa1010;
+  font-family: Verdana, sans-serif;
+}
+
+/* ========== 2.8 Chaining ========== */
+
+/* h1 is a type selector chained with class ".title" → "h1.title" */
+h1.title {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* ========== 2.9 Pseudo-classes ========== */
+
+/* Laurea logo hover effect */
+.Laurea:hover {
+  opacity: 0.7;
+  transform: scale(1.4); /* Slightly enlarges on hover */
+  transition: all 0.3s ease; /* Smooth animation */
+}
+
+/* Clicking Laurea logo makes it shrink */
+.Laurea:active {
+  transform: scale(100%); /* Shrinks when clicking */
+}
+
+/* Visiting the "Laurea UAS" link above the Laurea logo */
+.Visit-Laurea:visited {
+  color: red; /* Visited links turn red */
+}
+
+/* Styling takes effect when input field is focused */
+input:focus {
+  border-color: #004080;
+  outline: none;
+  background-color: #eef6ff;
+}
+
+/* Targets disabled input fields */
+input:disabled {
+  background-color: #eee;
+  color: #999;
+}
+
