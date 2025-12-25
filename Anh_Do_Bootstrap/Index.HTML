@@ -1,0 +1,656 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sally Reeder | Web Developer Portfolio</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Optional icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <!-- link to CSS file -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body class="bg-light">
+    <!-- ================= NAVBAR ================= -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold" href="index.html">Sally Reeder</a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMenu"
+          aria-controls="navMenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>                  
+
+          
+        </div>
+      </div>
+    </nav>
+
+    <!-- ================= SECTION 1: HOME ================= -->
+    <header id="home" class="container my-4">
+      <div class="card shadow-sm border-0">
+        <div class="card-body p-4 p-md-5">
+          <div class="row align-items-center g-4">
+            <div class="col-12 col-md-7">
+              <h1 class="display-6 fw-bold text-primary mb-2">
+                Sally Reeder’s Web Developer Portfolio
+              </h1>
+
+              <p class="text-muted mb-3">
+                I build clean, responsive websites using HTML, CSS, JavaScript, and Bootstrap 5.
+              </p>
+
+              <div class="d-flex flex-wrap gap-2">
+                <a class="btn btn-primary" href="#skills">View Skills</a>
+                <a class="btn btn-outline-secondary" href="#testimonials">See Testimonials</a>
+              </div>
+
+              <div class="mt-3">
+                <span class="badge text-bg-primary me-1">Bootstrap 5</span>
+                <span class="badge text-bg-secondary me-1">Responsive</span>
+                <span class="badge text-bg-success me-1">Front-End</span>
+                <span class="badge text-bg-dark">GitHub</span>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-5 text-center">
+             
+              <img
+                src="https://media.istockphoto.com/id/1318858332/fi/valokuva/p%C3%A4%C3%A4kuva-hymyilev%C3%A4st%C3%A4-naispuolisesta-ty%C3%B6ntekij%C3%A4st%C3%A4-joka-poseeraa-toimistossa.jpg?s=612x612&w=is&k=20&c=IVl6RfclZRk660cGlnGseSkKjgORHQfG0JomuUDJaoc="
+                class="img-fluid rounded-3 shadow-sm hero-photo"
+                alt="Profile photo"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ================= SECTION 2: ABOUT ME ================= -->
+    <section id="about" class="container pb-4">
+      <div class="card shadow-sm border-0">
+        <div class="card-body p-4 p-md-5">
+          <h2 class="fw-bold text-center mb-3">About Me</h2>
+
+          <p class="text-muted about-text mx-auto">
+            Hi! My name is Sally Reeder. I’m learning web development and I enjoy building projects
+            that look good on phones, tablets, and computers. I like working with Bootstrap because
+            it helps me create responsive layouts quickly.
+          </p>
+
+          <!-- Alert (component) -->
+          <div class="alert alert-info mt-4" role="alert">
+            I’m available for small portfolio websites and simple landing pages.
+          </div>
+
+          <!-- List group (component) -->
+          <div class="row g-3 mt-2">
+            <div class="col-12 col-md-6">
+              <div class="card border">
+                <div class="card-header bg-white fw-semibold">What I’m learning</div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Responsive design</li>
+                  <li class="list-group-item">Bootstrap components</li>
+                  <li class="list-group-item">GitHub basics</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6">
+              <div class="card border">
+                <div class="card-header bg-white fw-semibold">Quick facts</div>
+                <div class="card-body">
+                  <!-- Table (component) -->
+                  <div class="table-responsive">
+                    <table class="table table-sm mb-0">
+                      <tbody>
+                        <tr>
+                          <th class="text-muted">Focus</th>
+                          <td>Front-End</td>
+                        </tr>
+                        <tr>
+                          <th class="text-muted">Tools</th>
+                          <td>Bootstrap, Git</td>
+                        </tr>
+                        <tr>
+                          <th class="text-muted">Goal</th>
+                          <td>Build real projects</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+                  <div class="d-flex gap-2 mt-3">
+                    <a href="#contact" class="btn btn-primary btn-sm">Message Me</a>
+                    
+                  </div>
+
+                  <div class="mt-3 d-flex gap-3">
+                    <a href="#" class="text-decoration-none" aria-label="GitHub">
+                      <i class="bi bi-github fs-4"></i>
+                    </a>
+                    <a href="#" class="text-decoration-none" aria-label="LinkedIn">
+                      <i class="bi bi-linkedin fs-4"></i>
+                    </a>
+                    <a href="#" class="text-decoration-none" aria-label="Email">
+                      <i class="bi bi-envelope fs-4"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SECTION 3: SKILLS ================= -->
+    <section id="skills" class="container pb-4">
+      <div class="card shadow-sm border-0">
+        <div class="card-body p-4 p-md-5">
+          <h2 class="fw-bold text-center mb-4">Skills</h2>
+
+          <div class="row g-4">
+            <!-- Accordion (component) -->
+            <div class="col-12 col-lg-6">
+              <div class="accordion" id="skillsAccordion">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#htmlCssJs"
+                    >
+                      HTML / CSS / JavaScript
+                    </button>
+                  </h2>
+                  <div id="htmlCssJs" class="accordion-collapse collapse show">
+                    <div class="accordion-body">
+                      <p class="text-muted mb-2">
+                        I can build layouts, style pages, and add basic interactivity.
+                      </p>
+
+                      <!-- Progress bars (component) -->
+                      <div class="mb-2">
+                        <div class="d-flex justify-content-between small">
+                          <span>HTML</span><span>80%</span>
+                        </div>
+                        <div class="progress">
+                          <div class="progress-bar" style="width: 80%"></div>
+                        </div>
+                      </div>
+
+                      <div class="mb-2">
+                        <div class="d-flex justify-content-between small">
+                          <span>CSS</span><span>75%</span>
+                        </div>
+                        <div class="progress">
+                          <div class="progress-bar" style="width: 75%"></div>
+                        </div>
+                      </div>
+
+                      <div class="mb-0">
+                        <div class="d-flex justify-content-between small">
+                          <span>JavaScript</span><span>65%</span>
+                        </div>
+                        <div class="progress">
+                          <div class="progress-bar" style="width: 65%"></div>
+                        </div>
+                      </div>
+
+                      <div class="mt-3">
+                        <span class="badge text-bg-secondary me-1">DOM</span>
+                        <span class="badge text-bg-secondary me-1">Forms</span>
+                        <span class="badge text-bg-secondary">Layout</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#bootstrapSkill"
+                    >
+                      Bootstrap 5
+                    </button>
+                  </h2>
+                  <div id="bootstrapSkill" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                      <p class="text-muted mb-2">
+                        I use the grid system, utilities, and components.
+                      </p>
+
+                      <div class="mb-2">
+                        <div class="d-flex justify-content-between small">
+                          <span>Grid</span><span>75%</span>
+                        </div>
+                        <div class="progress">
+                          <div class="progress-bar" style="width: 75%"></div>
+                        </div>
+                      </div>
+
+                      <div class="mb-0">
+                        <div class="d-flex justify-content-between small">
+                          <span>Components</span><span>70%</span>
+                        </div>
+                        <div class="progress">
+                          <div class="progress-bar" style="width: 70%"></div>
+                        </div>
+                      </div>
+
+                      <div class="mt-3">
+                        <span class="badge text-bg-primary me-1">Navbar</span>
+                        <span class="badge text-bg-primary me-1">Cards</span>
+                        <span class="badge text-bg-primary">Carousel</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#githubSkill"
+                    >
+                      Git & GitHub
+                    </button>
+                  </h2>
+                  <div id="githubSkill" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                      <p class="text-muted mb-2">
+                        I can upload projects, make commits, and organize repositories.
+                      </p>
+
+                      <div class="mb-2">
+                        <div class="d-flex justify-content-between small">
+                          <span>Git</span><span>60%</span>
+                        </div>
+                        <div class="progress">
+                          <div class="progress-bar" style="width: 60%"></div>
+                        </div>
+                      </div>
+
+                      <div class="mb-0">
+                        <div class="d-flex justify-content-between small">
+                          <span>GitHub</span><span>70%</span>
+                        </div>
+                        <div class="progress">
+                          <div class="progress-bar" style="width: 70%"></div>
+                        </div>
+                      </div>
+
+                      <div class="mt-3">
+                        <span class="badge text-bg-dark me-1">Repos</span>
+                        <span class="badge text-bg-dark">Commits</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Skill cards (Card component again) -->
+            <div class="col-12 col-lg-6">
+              <div class="row g-3">
+                <div class="col-12 col-sm-6">
+                  <div class="card h-100 border">
+                    <div class="card-body">
+                      <div class="fw-semibold">HTML</div>
+                      <p class="text-muted small mb-0">Semantic structure and accessibility basics.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-6">
+                  <div class="card h-100 border">
+                    <div class="card-body">
+                      <div class="fw-semibold">CSS</div>
+                      <p class="text-muted small mb-0">Flexbox and responsive layouts.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-6">
+                  <div class="card h-100 border">
+                    <div class="card-body">
+                      <div class="fw-semibold">Bootstrap</div>
+                      <p class="text-muted small mb-0">Grid, components, and utilities.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-6">
+                  <div class="card h-100 border">
+                    <div class="card-body">
+                      <div class="fw-semibold">GitHub</div>
+                      <p class="text-muted small mb-0">Projects, commits, and basic collaboration.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <div class="border rounded p-3 bg-white d-flex justify-content-between align-items-center">
+                    <div>
+                      <div class="fw-semibold">Need a simple website?</div>
+                      <div class="text-muted small">Click the button to make a request.</div>
+                    </div>
+                    <button
+                      class="btn btn-primary"
+                      type="button"
+                      data-bs-toggle="Request"
+                      data-bs-target="#quoteRequest"
+                    >
+                      Request
+                    </button>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SECTION 4: TESTIMONIALS ================= -->
+    <section id="testcarousel" class="container pb-4">
+      <div class="card shadow-sm border-0">
+        <div class="card-body p-4 p-md-5">
+          <h2 class="fw-bold text-center mb-4">Testimonials</h2>
+
+          <!-- Carousel (component) -->
+          <div id="testCarousel" class="carousel slide position-relative"
+    data-bs-ride="carousel"
+  >
+    <!-- Indicators (small lines under text) -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#testCarousel" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#testCarousel" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#testCarousel" data-bs-slide-to="2"></button>
+    </div>
+
+    <div class="carousel-inner">
+      <!-- SLIDE 1 -->
+      <div class="carousel-item active">
+        <div class="row justify-content-center align-items-center g-4">
+          <div class="col-12 col-md-4 text-center">
+            <img
+              src="https://media.istockphoto.com/id/1399788030/fi/valokuva/muotokuva-nuoresta-luottavaisesta-intialaisesta-naisesta-poseeraa-taustalla.jpg?s=2048x2048&w=is&k=20&c=alvNSagpALxLPrnM1Uq5rHNs6A8auo2gudM0qzWrY0o="
+              class="img-fluid testimonial-photo"
+              alt="Testimonial"
+            />
+          </div>
+
+          <div class="col-12 col-md-6">
+            <p class="text-muted">
+              Sally is very hard working and creative person who could inspire me. It has been nice to study and work with her inseveral group works and she has shown how responsible and talent she is. I highly recommend her for any employer. 
+            </p>
+            <div class="fw-semibold">
+              — Classmate, Computer Science Course - 
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SLIDE 2 (same content) -->
+      <div class="carousel-item">
+        <div class="row justify-content-center align-items-center g-4">
+          <div class="col-12 col-md-4 text-center">
+            <img
+              src="https://media.istockphoto.com/id/1318189938/photo/headshot-portrait-of-smiling-senior-businesswoman-in-office.jpg?s=2048x2048&w=is&k=20&c=mhGeSPQL-7LG3U7kMNvUvkF2erzlV7nlKZnI8bMoAUg="
+              class="img-fluid testimonial-photo"
+              alt="Testimonial"
+            />
+          </div>
+
+          <div class="col-12 col-md-6">
+            <p class="text-muted">
+              Sally's enthusiasm for technology and creativity is truly
+        inspiring. Her hands-on approach to learning and
+        problem-solving shows a deep commitment to growth. Watching
+        her tackle challenges with curiosity and determination has
+        been a joy!
+            </p>
+            <div class="fw-semibold">
+              — Mentor - 
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SLIDE 3 (same content) -->
+      <div class="carousel-item">
+        <div class="row justify-content-center align-items-center g-4">
+          <div class="col-12 col-md-4 text-center">
+            <img
+              src="https://media.istockphoto.com/id/1497142422/fi/valokuva/l%C3%A4hikuva-nuoresta-menestyneest%C3%A4-yritt%C3%A4j%C3%A4st%C3%A4-liikemiessijoittajasta-joka-k%C3%A4ytt%C3%A4%C3%A4.jpg?s=2048x2048&w=is&k=20&c=gL3cSz4JUJkU0qzwESQto2Bg7g7hWCXkoVeAmze3yR0="
+              class="img-fluid testimonial-photo"
+              alt="Testimonial"
+            />
+          </div>
+
+          <div class="col-12 col-md-6">
+            <p class="text-muted">
+              Working with Sally is always a positive experience. She is kind, respectful,
+              and always gives her best. Whether it’s group work or independent study,
+              Sally’s dedication and attitude make a real difference.
+            </p>
+            <div class="fw-semibold">
+              — Project partner
+            </div>
+          </div>
+        </div>
+      
+    </div>
+    <!-- left arrow-->
+
+    <button
+  
+      class="carousel-control-prev custom-arrow"
+      type="button"
+      data-bs-target="#testCarousel"
+      data-bs-slide="prev"
+      aria-label="Previous"
+    >
+      <span class="arrow-circle" aria-hidden="true"><</span>
+    </button>
+
+    <!-- RIGHT ARROW -->
+    <button
+      class="carousel-control-next custom-arrow"
+      type="button"
+      data-bs-target="#testCarousel"
+      data-bs-slide="next"
+      aria-label="next"
+    >
+      <span class="arrow-circle">></span>
+    </button>
+
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- ================= SECTION 5: CONTACT ================= -->
+    <section id="contact" class="container pb-4">
+      <div class="card shadow-sm border-0">
+        <div class="card-body p-4 p-md-5">
+          <h2 class="fw-bold text-center mb-4">Contact</h2>
+
+          <div class="row g-4">
+            <div class="col-12 col-lg-7">
+              <!-- Form (component) -->
+              <form id="contactForm">
+                <div class="mb-3">
+                  <label class="form-label" for="cName">Name</label>
+                  <input class="form-control" id="cName" type="text" placeholder="Your name" />
+                </div>
+
+                <div class="mb-3">
+                  <label class="form-label" for="cEmail">Email</label>
+                  <input class="form-control" id="cEmail" type="email" placeholder="you@example.com" />
+                </div>
+
+                <div class="mb-3">
+                  <label class="form-label" for="cMessage">Message</label>
+                  <textarea class="form-control" id="cMessage" rows="4" placeholder="Write your message..."></textarea>
+                </div>
+
+                <div class="d-flex gap-2">
+                  <button class="btn btn-primary" type="button" id="sendBtn">
+                    Send
+                    <span class="spinner-border spinner-border-sm ms-2 d-none" id="sendSpinner" role="status" aria-hidden="true"></span>
+                  </button>
+
+                 
+                </div>
+
+                <!-- Simple message area -->
+                <div class="mt-3">
+                  <div class="alert alert-success d-none" id="sentAlert" role="alert">
+                    Message sent! (This is a demo.)
+                  </div>
+                </div>
+              </form>
+            </div>
+
+            <div class="col-12 col-lg-5">
+              <div class="border rounded p-3 bg-white h-100">
+                <h3 class="h5 fw-bold">Other ways to reach me</h3>
+                
+                <div class="d-flex flex-column gap-2">
+                  <div><i class="bi bi-envelope me-2"></i> sally@example.com</div>
+                  <div><i class="bi bi-github me-2"></i> github.com/sallyreeder</div>
+                  <div><i class="bi bi-linkedin me-2"></i> linkedin.com/in/sallyreeder</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Toast (component) -->
+          <div class="toast-container position-fixed bottom-0 end-0 p-3">
+            <div id="sentToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+              <div class="toast-header">
+                <strong class="me-auto">Sally Reeder</strong>
+                <small class="text-muted">now</small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+              </div>
+              <div class="toast-body">
+                Thanks for your message! 
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="bg-white border-top">
+      <div class="container py-4">
+        <div class="row g-3">
+          <div class="col-12 col-md-6">
+            <div class="fw-bold text-primary">Sally Reeder</div>
+            <div class="text-muted small">Web Developer Portfolio</div>
+          </div>
+
+          <div class="col-12 col-md-6 d-flex justify-content-md-end gap-2">
+            <a class="btn btn-outline-secondary btn-sm" href="#home">Back to top</a>
+            <a class="btn btn-primary btn-sm" href="#contact">Contact</a>
+          </div>
+        </div>
+
+        <hr class="my-3" />
+
+        <div class="d-flex flex-column flex-md-row justify-content-between">
+          <div class="text-muted small">© 2025 Sally Reeder. All rights reserved.</div>
+          <div class="d-flex gap-3">
+            <a class="text-muted small text-decoration-none" href="privacy.html">Privacy</a>
+            <a class="text-muted small text-decoration-none" href="terms.html">Terms</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+   
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Simple beginner JS: spinner + alert + toast -->
+    <script>
+      const sendBtn = document.getElementById("sendBtn");
+      const spinner = document.getElementById("sendSpinner");
+      const sentAlert = document.getElementById("sentAlert");
+      const toastBtn = document.getElementById("showToastBtn");
+
+      sendBtn.addEventListener("click", function () {
+        spinner.classList.remove("d-none");
+        sentAlert.classList.add("d-none");
+
+        // Fake "sending" for 1 second
+        setTimeout(function () {
+          spinner.classList.add("d-none");
+          sentAlert.classList.remove("d-none");
+        }, 1000);
+      });
+
+      toastBtn.addEventListener("click", function () {
+        const toastEl = document.getElementById("sentToast");
+        const toast = new bootstrap.Toast(toastEl);
+        toast.show();
+      });
+    </script>
+  </body>
+</html>
